@@ -1,1 +1,25 @@
 # bull-basic-template
+
+Clone Project
+
+    git clone git@github.com:willmagna/bull-basic-template.git
+
+Run Redis on Docker
+
+    docker run --name redis -p 6379:6379 -d -t redis:alpine
+
+Add .env to the project
+
+    cp .env.example .env
+
+Install all the dependencies
+
+    npm i
+
+Run the server application
+
+    npm run dev:server
+
+Run the worker
+
+    npm run dev:worker
