@@ -23,3 +23,7 @@ Run the server application
 Run the worker
 
     npm run dev:worker
+
+Access Bull-Board
+
+    http://localhost:3333/admin/queues
