@@ -3,22 +3,23 @@ function sleep(ms) {
 }
 
 export default {
-  key: "progressTest",
+  name: "progressTest",
   async handle(job, done) {
     console.log("Initialize progressTest Job...");
-    console.log("1/5");
+    console.log("job.data", job.data);
+    console.log("Progress Teste 1/5");
     job.progress(20);
     await sleep(1000);
-    console.log("2/5");
+    console.log("Progress Teste 2/5");
     job.progress(40);
     await sleep(2000);
-    console.log("3/5");
+    console.log("Progress Teste 3/5");
     job.progress(60);
     await sleep(3000);
-    console.log("4/5");
+    console.log("Progress Teste 4/5");
     job.progress(80);
     await sleep(4000);
-    console.log("5/5");
+    console.log("Progress Teste 5/5");
     job.progress(100);
     await sleep(5000);
     done();

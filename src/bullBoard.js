@@ -8,7 +8,7 @@ const serverAdapter = new ExpressAdapter();
 serverAdapter.setBasePath("/admin/queues");
 
 const bullBoard = createBullBoard({
-  queues: [new BullAdapter(Queue)],
+  queues: Queue.queues.map((queue) => new BullAdapter(queue.instance)),
   serverAdapter,
 });
 

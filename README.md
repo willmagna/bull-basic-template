@@ -7,6 +7,7 @@ Clone Project
 Run Redis on Docker
 
     docker run --name redis -p 6379:6379 -d -t redis:alpine
+    sudo docker run -p 6379:6379 --name redis -d redis redis-server --appendonly yes --requirepass 123456
 
 Add .env to the project
 
