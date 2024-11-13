@@ -1,10 +1,7 @@
 import Bull from "bull";
+import redisConfig from "./config/redis";
+import progressTest from "./jobs/progressTest";
 
-const redisConfig = {
-  host: process.env.REDIS_HOST,
-  port: process.env.REDIS_PORT,
-};
+const queue = new Bull(progressTest.key, redisConfig);
 
-const myFirstQueue = new Bull("lorem", redisConfig);
-
-export default myFirstQueue;
+export default queue;
