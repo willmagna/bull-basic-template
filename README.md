@@ -1,5 +1,11 @@
 # bull-basic-template
 
+### This template is divide by the branches
+
+1.  basics 2. This branch is a very basic Bull setup.
+2.  separate-process-function-from-progress-queue 3. This branch separates the queue name and the process function, preparing it to receive the next branch (main).
+3.  main 4. This branch is the final and more complete template for using Bull. It is prepared to scale your application.
+
 Clone Project
 
     git clone git@github.com:willmagna/bull-basic-template.git
@@ -7,9 +13,7 @@ Clone Project
 Run Redis on Docker
 
     docker run --name redis -p 6379:6379 -d -t redis:alpine
-
     or
-
     sudo docker run -p 6379:6379 --name redis -d redis redis-server --appendonly yes --requirepass 123456
 
 Add .env to the project
@@ -20,13 +24,17 @@ Install all the dependencies
 
     npm i
 
-Run the server application
+Run the server server
 
     npm run dev:server
 
 Run the worker
 
     npm run dev:worker
+
+Or Run server and worker together
+
+    npm run dev
 
 Access Bull-Board
 
