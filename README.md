@@ -2,9 +2,9 @@
 
 ### This template is divide by the branches
 
-1.  basics 2. This branch is a very basic Bull setup.
-2.  separate-process-function-from-progress-queue 3. This branch separates the queue name and the process function, preparing it to receive the next branch (main).
-3.  main 4. This branch is the final and more complete template for using Bull. It is prepared to scale your application.
+1.  basics: This branch is a very basic Bull setup.
+2.  separate-process-function-from-progress-queue: This branch separates the queue name and the process function, preparing it to receive the next branch (main).
+3.  main: This branch is the final and more complete template for using Bull. It is prepared to scale your application.
 
 Clone Project
 
